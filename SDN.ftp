@@ -1,0 +1,15 @@
+open ofacftp.treas.gov 
+user anonymous
+password
+lcd /D "C:\Users\009374\Desktop\OFAC#1B\"
+cd  fac_delim
+binary
+get sdn.ff
+get add.ff
+get alt.ff
+cd ../consolidated_list
+get cons_prim.ff
+get cons_add.ff
+get cons_alt.ff
+disconnect
+quit
